@@ -9,6 +9,8 @@ A scalable backend system for managing, approving, and broadcasting educational 
 This system allows teachers to upload subject-based content, which is then reviewed by a principal before being made publicly available. Approved content is delivered through a time-based rotation engine and optimized using Redis caching.
 
 ---
+API-Documentation-Link : https://content-broadcasting-system-65gt.onrender.com/api-docs
+
 
 ## ✨ Features
 
