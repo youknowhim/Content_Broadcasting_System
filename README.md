@@ -42,14 +42,14 @@ This system allows teachers to upload subject-based content, which is then revie
 ## 📁 Project Structure
 
 
-src/
-├── config/
-├── controllers/
-├── routes/
-├── services/
-├── middlewares/
-├── models/
-└── app.js
+src/<br>
+├── config/<br>
+├── controllers/<br>
+├── routes/<br>
+├── services/<br>
+├── middlewares/<br>
+├── models/<br>
+└── app.js<br>
 server.js
 
 
@@ -80,17 +80,16 @@ npm install
 Create a `.env` file:
 
 
-PORT=5000
+PORT=5000<br>
 
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=broadcast_system
+DB_HOST=localhost<br>
+DB_USER=root<br>
+DB_PASS=yourpassword<br>
+DB_NAME=broadcast_system<br>
 
-JWT_SECRET=your_secret_key
-
-REDIS_HOST=127.0.0.1
-REDIS_PORT=6379
+JWT_SECRET=your_secret_key<br>
+REDIS_HOST=127.0.0.1<br>
+REDIS_PORT=6379<br>
 
 
 ---
