@@ -1,0 +1,21 @@
+JWT-based authentication with secure password hashing and token generation
+Role-Based Access Control (RBAC) using middleware (teacher, principal)
+Teachers can upload content with file handling (Multer) and scheduling metadata
+Principal moderates content via approval/rejection workflow with optional reason
+Content grouped by subject using content_slots for structured broadcasting
+content_schedule manages rotation order and duration per subject
+Time-based rotation engine selects content dynamically using start_time and duration
+Public API serves only approved, time-valid content
+Redis caching used for public endpoints with TTL aligned to rotation duration
+Cache invalidation handled via expiration strategy
+Rate limiting applied on public APIs to prevent abuse
+Pagination and filtering supported (subject, teacher, status, etc.)
+Teacher-specific private API to view their uploaded content
+Principal dashboard API for filtering and managing all content
+Analytics system tracks content views and provides insights (top content, subject usage)
+Bulk insertion used for efficient view tracking
+MySQL relational schema with proper foreign keys and indexing
+Error handling via centralized middleware
+Modular folder structure (controllers, routes, services, middleware, config)
+Swagger API documentation for all endpoints (public & protected)
+Environment-based configuration using dotenv

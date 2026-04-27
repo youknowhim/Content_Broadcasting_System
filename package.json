@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "^4",
+    "jsonwebtoken": "^9",
+    "bcrypt": "^5",
+    "multer": "^1",
+    "mysql2": "^3",
+    "dotenv": "^16"
+  }
+}
