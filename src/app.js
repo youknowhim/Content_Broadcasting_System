@@ -2,6 +2,7 @@ const express = require("express");
 const swaggerUi = require("swagger-ui-express");
 const swaggerSpec = require("./config/swagger");
 const initDB = require("./models/init.db");
+const cors  = require("cors");
 
 const startServer = async () => {
   await initDB(); 
@@ -23,6 +24,11 @@ const startServer = async () => {
     console.error(err);
     res.status(500).json({ msg: "Server error" });
   });
+  app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
   return app;
 };
