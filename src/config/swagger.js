@@ -10,7 +10,7 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:5000"
+        url: "https://content-broadcasting-system-65gt.onrender.com"
       }
     ],
     components: {
